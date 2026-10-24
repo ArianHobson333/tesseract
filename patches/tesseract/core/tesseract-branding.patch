@@ -1,0 +1,33 @@
+--- a/chrome/app/theme/chromium/BRANDING
++++ b/chrome/app/theme/chromium/BRANDING
+@@ -1,10 +1,10 @@
+-COMPANY_FULLNAME=The Helium Authors
+-COMPANY_SHORTNAME=The Helium Authors
+-PRODUCT_FULLNAME=Helium
+-PRODUCT_SHORTNAME=Helium
+-PRODUCT_INSTALLER_FULLNAME=Helium Installer
+-PRODUCT_INSTALLER_SHORTNAME=Helium Installer
+-COPYRIGHT=Copyright @LASTCHANGE_YEAR@ The Helium Authors. All rights reserved.
+-MAC_BUNDLE_ID=net.imput.helium
++COMPANY_FULLNAME=The Tesseract Authors
++COMPANY_SHORTNAME=The Tesseract Authors
++PRODUCT_FULLNAME=Tesseract
++PRODUCT_SHORTNAME=Tesseract
++PRODUCT_INSTALLER_FULLNAME=Tesseract Installer
++PRODUCT_INSTALLER_SHORTNAME=Tesseract Installer
++COPYRIGHT=Copyright @LASTCHANGE_YEAR@ The Tesseract Authors. All rights reserved.
++MAC_BUNDLE_ID=io.github.arianhobson333.tesseract
+ MAC_CREATOR_CODE=Cr24
+-MAC_TEAM_ID=S4Q33XPHB4
++MAC_TEAM_ID=
+--- a/chrome/app/chrome_crash_reporter_client.cc
++++ b/chrome/app/chrome_crash_reporter_client.cc
+@@ -136,7 +136,7 @@
+ void ChromeCrashReporterClient::GetProductInfo(ProductInfo* product_info) {
+   CHECK(product_info);
+ 
+-  const char* product_name = "Helium";
++  const char* product_name = "Tesseract";
+ 
+ #if BUILDFLAG(IS_ANDROID)
+   std::string_view version = version_info::GetVersionNumber();
