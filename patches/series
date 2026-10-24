@@ -369,3 +369,4 @@ helium/ui/progress-bar.patch
 helium/ui/exclusive-access-bubble.patch
 helium/ui/hide-page-actions-flag.patch
 tesseract/core/tesseract-branding.patch
+tesseract/core/tesseract-update-url.patch
