@@ -5,7 +5,8 @@
 # the terms of the GPL-3.0 license that can be found in the LICENSE file.
 """
 Post-pass after name_substitution.py: replaces the Helium product name with
-Tesseract in .grd/.xtb strings. URLs, reverse-DNS IDs and the upstream
+Tesseract in .grd/.xtb strings. URLs, reverse-DNS IDs, "Helium services"
+(their servers, not ours) and the upstream
 authors credit are left alone. The helium:// scheme is kept as is, because
 the scheme itself is defined by Helium's patches.
 """
@@ -13,7 +14,7 @@ the scheme itself is defined by Helium's patches.
 import multiprocessing
 import re
 
-REPLACEMENT_REGEX = re.compile(r'(?<!The )\bHelium\b(?! Authors)')
+REPLACEMENT_REGEX = re.compile(r'(?<!The )\bHelium\b(?! Authors| [Ss]ervices)')
 
 
 def replace_text(text):

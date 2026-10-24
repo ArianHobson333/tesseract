@@ -27,6 +27,8 @@ def test_rewrites_product_name(src, expected):
     "Chrome Web Store",
     "Chrome Root Program",
     "HeliumBrowser",
+    "Helium services",
+    "Allow connecting to Helium Services",
 ])
 def test_leaves_urls_credits_and_ids_alone(src):
     assert replace_text(src) == (src, False)
