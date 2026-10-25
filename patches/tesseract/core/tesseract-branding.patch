@@ -19,7 +19,7 @@
 +MAC_BUNDLE_ID=io.github.arianhobson333.tesseract
  MAC_CREATOR_CODE=Cr24
 -MAC_TEAM_ID=S4Q33XPHB4
-+MAC_TEAM_ID=
++MAC_TEAM_ID=9G9KQF9S4Q
 --- a/chrome/app/chrome_crash_reporter_client.cc
 +++ b/chrome/app/chrome_crash_reporter_client.cc
 @@ -136,7 +136,7 @@
